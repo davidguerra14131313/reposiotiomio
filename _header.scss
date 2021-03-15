@@ -1,0 +1,30 @@
+$header-fontfamily: Verdana, Geneva, sans-serif;
+$border-style: solid black;
+@import 'mixins';
+
+header{
+    grid-column: 1/5;
+    border: $border-style;
+    display: grid;
+    grid-auto-columns: 4fr;
+    grid-template-columns:15% 20% 40% auto;
+    background-color: blue;
+    color: white;
+
+    font-family: $header-fontfamily;
+    #sistema_integrado{
+        display: grid;
+        grid-column: 3/4;
+        justify-self: start;
+        align-content: center;
+        padding-bottom: 10px;
+    }
+    #usuariocabecera{
+        grid-column: 4/5;
+        justify-self: center;
+        align-self: center;
+    
+        
+    }
+    img {@include style-img-usuariocabecera}
+}

@@ -1,0 +1,37 @@
+$border-style: solid black;
+$main-fontfamily: Courier New, Courier, monospace;
+@import 'mixins';
+
+main{
+    grid-column: 1/5;
+    border: $border-style;
+    
+    font-family: $main-fontfamily;
+    display:grid;
+    gap: 10px;
+    justify-content: center;
+    @include style-main;
+    fieldset
+    {
+    width: 50vw;
+    display: grid;
+    }
+    #formain
+    {
+    justify-content: center;
+    }
+    #span1     button{
+        justify-content: stretch;
+        width:190px;
+        height: 20px;
+    }
+    #span2
+    {
+        
+        text-align: center;
+    }
+    #span2>button
+    {
+        width:180px;
+    }
+}
